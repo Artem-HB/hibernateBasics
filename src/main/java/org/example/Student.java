@@ -16,8 +16,9 @@ public class Student {
     @Id
     private int id;
 
-    @Column(name = "grade", unique = false)
+    @OneToOne(cascade = CascadeType.ALL)
     private Grades grades;
+
     @Column(name = "fullName", length = 50)
     private String name;
 

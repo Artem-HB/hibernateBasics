@@ -9,7 +9,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "HealthCheck")
-
+@NoArgsConstructor
 public class Health {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
